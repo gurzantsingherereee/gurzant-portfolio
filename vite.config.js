@@ -1,13 +1,14 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
+import { resolve } from 'node:path';
 
 export default defineConfig({
-  server: {
-    port: 5173,
-    open: true,
-    host: true
-  },
+  base: './',
+  server: { port: 5173, host: true, open: false },
   build: {
     outDir: 'dist',
-    minify: 'terser'
+    minify: 'terser',
+    rollupOptions: {
+      input: { portfolio: resolve(import.meta.dirname, 'index.html'), dashboard: resolve(import.meta.dirname, 'admin.html') }
+    }
   }
-})
+});
