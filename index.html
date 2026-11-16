@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gurzant Singh — creative direction, brand identity, packaging, ecommerce design and 3D visualization. Explore selected work and case studies.">
+<meta name="theme-color" content="#0d0d0d">
 <title>Gurzant Singh — Visual Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Editorial+New:ital,wght@0,200;1,200&amp;family=Syne:wght@400;500;600;700;800&amp;family=DM+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet">
@@ -784,8 +786,11 @@ nav.scrolled {
   .about-info-row { grid-template-columns: 1fr; }
 }
 </style>
+<script src="./config.js"></script>
 </head>
 <body class="">
+<a class="skip-link" href="#pg-home">Skip to content</a>
+<style>.skip-link{position:fixed;top:-60px;left:16px;background:#f4d32f;color:#111;padding:12px;z-index:99999;font:12px Arial}.skip-link:focus{top:12px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}</style>
 
 <!-- Grain Canvas -->
 <canvas id="grain-canvas" width="978" height="728"></canvas>
@@ -812,7 +817,7 @@ nav.scrolled {
 </nav>
 
 <!-- ══════════════ HOME ══════════════ -->
-<div id="pg-home" class="page active">
+<div id="pg-home" role="main" class="page active">
 
   <section id="home-hero">
     <div class="hero-grid"></div>
@@ -1987,4 +1992,5 @@ window.addEventListener('load', () => {
 </script>
 
 
+<script type="module" src="./site-controller.js"></script>
 </body></html>
